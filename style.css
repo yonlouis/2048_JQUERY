@@ -1,0 +1,191 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #57407C;
+}
+
+#createTable {
+  position: relative;
+  margin: auto;
+}
+
+tr td {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #57407C;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px 10%;
+}
+
+td {
+  background: #eee4da;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 55px;
+  -webkit-transition: 100ms ease-in-out;
+  -moz-transition: 100ms ease-in-out;
+  -webkit-transition-property: top, left;
+  -moz-transition-property: top, left;
+}
+
+#id33 {
+  background-image:image(home/yon/Downloads/pexels-photo-61127.jpeg);
+  background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.head {
+  height: 120px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.game {
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+div.description {
+  height: 250px;
+  width: 300px;
+  top: 1000px;
+  color: #333;
+  font-family: nunito;
+  transform: translate(-50%, -50%) scale(0);
+  position: absolute;
+  left: 50%;
+  top: 425px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 0px;
+  z-index: 1000;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 15px;
+  transition: 0.3s all;
+}
+
+.description.show {
+  visibility: visible;
+  opacity: 1;
+  font-size: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s all;
+}
+
+.info {
+  font-family: 'Indie Flower', 'cursive';
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0px;
+  border-color: #aaa;
+  background-color: #88b1ef;
+  color: #fff;
+  font-size: 20px;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  margin: 20px;
+  transition: 0.1s background-color;
+}
+
+.info:hover {
+  background-color: #6593d8;
+}
+
+
+.repeat {
+  margin: 0px !important;
+}
+
+.a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+  font-weight: 200;
+  margin-right: 15px;
+  color: white;
+
+}
+
+.score {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  font-family: 'Indie Flower', 'cursive';
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes color_change {
+  from { background-color: #FF0000; }
+  to { background-color: #780000; }
+}
+
+.game_over {
+  width: 100%;
+  height: 100%;
+  animation-name: color_change;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #FF0000;
+
+}
+
+@-moz-keyframes move-up {
+  0% {
+    top: 25px;
+    opacity: 1;
+  }
+
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@keyframes move-up {
+  0% {
+    top: 25px;
+    opacity: 1;
+  }
+
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+.score_addition {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  color: white;
+  z-index: 100;
+  -webkit-animation: move-up 800ms ease-in;
+  -moz-animation: move-up 800ms ease-in;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+}
+
+
+.cell_merge{
+  transform : scale(1.2);
+  transition: tranform 500ms 500ms;
+
+}
